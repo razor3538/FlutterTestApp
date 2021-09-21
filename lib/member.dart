@@ -5,15 +5,15 @@ class Member {
 
   Member(this.login, this.avatarUrl, this.htmlUrl) {
     if (login == null) {
-      throw ArgumentError("Логин или участник не могут быть пустымию "
+      throw ArgumentError("Логин или участник не могут быть пустыми. "
           "Received: '$login'");
     }
     if (avatarUrl == null) {
-      throw ArgumentError("Ссылка на аватар не может быть пустойю "
+      throw ArgumentError("Ссылка на аватар не может быть пустой. "
           "Received: '$avatarUrl'");
     }
     if (htmlUrl == null) {
-      throw ArgumentError("Ссылка на пользователя не может быть пустойю "
+      throw ArgumentError("Ссылка на пользователя не может быть пустой. "
           "Received: '$htmlUrl'");
     }
   }
